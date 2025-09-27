@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futurnship.in - Innovation Hub | Scholarships & Opportunities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .hero {
+            padding: 120px 0 100px;
+            text-align: center;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+        }
+
+        .hero-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .hero-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .hero-feature {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .hero-feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .hero-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-feature h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .hero-feature p {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+
+        .hero-cta {
+            margin-top: 2rem;
+        }
+
+        .cta-note {
+            font-size: 1rem;
+            margin-top: 1rem;
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.6);
+        }
+
+        .features {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .stats {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-item p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: #333;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero {
+                padding: 100px 0 60px;
+                min-height: 100vh;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 2rem;
+            }
+
+            .hero-features {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin-bottom: 3rem;
+            }
+
+            .hero-feature {
+                padding: 1.5rem;
+            }
+
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* CSS UI/UX Animations */
+        @keyframes fadeUp {
+            0% { opacity: 0; transform: translateY(24px) scale(0.98); }
+            60% { opacity: 1; transform: translateY(0) scale(1.01); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes softPop {
+            0% { opacity: 0; transform: scale(0.96); }
+            70% { opacity: 1; transform: scale(1.02); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(24px);
+        }
+
+        .animate-on-scroll.visible {
+            animation: fadeUp 700ms cubic-bezier(.22,.61,.36,1) forwards;
+        }
+
+        /* Staggered feature cards */
+        .features-grid .feature-card.visible:nth-child(1) { animation-delay: 60ms; }
+        .features-grid .feature-card.visible:nth-child(2) { animation-delay: 120ms; }
+        .features-grid .feature-card.visible:nth-child(3) { animation-delay: 180ms; }
+        .features-grid .feature-card.visible:nth-child(4) { animation-delay: 240ms; }
+        .features-grid .feature-card.visible:nth-child(5) { animation-delay: 300ms; }
+        .features-grid .feature-card.visible:nth-child(6) { animation-delay: 360ms; }
+
+        /* Micro-interactions */
+        .cta-button {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-button:after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(120px 120px at var(--x,50%) var(--y,50%), rgba(255,255,255,0.35), transparent 40%);
+            opacity: 0;
+            transition: opacity 250ms ease;
+            pointer-events: none;
+        }
+
+        .cta-button:hover:after { opacity: 1; }
+        .cta-button:active { transform: translateY(-1px) scale(0.99); }
+
+        .feature-card,
+        .internship-card,
+        .scholarship-card {
+            transition: transform 250ms ease, box-shadow 250ms ease;
+        }
+
+        .feature-card:hover,
+        .internship-card:hover,
+        .scholarship-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+        }
+
+        .nav-links a {
+            background-image: linear-gradient(currentColor, currentColor);
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            background-size: 0 2px;
+            transition: color 200ms ease, background-size 250ms ease;
+        }
+
+        .nav-links a:hover { background-size: 100% 2px; }
+
+        /* Respect reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+        }
+
+        .registration-section {
+            padding: 80px 0;
+            background: white;
+            display: none; /* hidden by default for step flow */
+        }
+
+        .registration-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .registration-section p {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .registration-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .checkbox-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.5rem;
+        }
+
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: auto;
+            margin-right: 0.5rem;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .results-section {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .results-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        #results-description {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .internship-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .internship-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .internship-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .internship-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .internship-card .company {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .internship-card .location {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .internship-card .description {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .internship-card .requirements {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .internship-card .requirements h4 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .internship-card .requirements ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+
+        .internship-card .requirements li {
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .apply-btn {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .match-score {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .language-selector {
+            position: fixed;
+            top: 70px; /* moved down to avoid overlapping header links */
+            right: 20px;
+            z-index: 1001;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 10px 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .language-selector select {
+            border: none;
+            background: transparent;
+            font-size: 0.9rem;
+            color: #333;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .scholarship-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .scholarship-section h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .scholarship-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .scholarship-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .scholarship-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .scholarship-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .scholarship-card .amount {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 1rem;
+        }
+
+        .scholarship-card .eligibility {
+            margin-bottom: 1rem;
+        }
+
+        .scholarship-card .eligibility h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .scholarship-card .eligibility ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .scholarship-card .eligibility li {
+            margin-bottom: 0.3rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        .scholarship-card .eligibility li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+        }
+
+        .caste-section {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .caste-section h4 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .caste-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .caste-option {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+            background: white;
+            border-radius: 8px;
+            border: 2px solid #e1e5e9;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .caste-option:hover {
+            border-color: #667eea;
+        }
+
+        .caste-option input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        .caste-option.selected {
+            border-color: #667eea;
+            background: #f0f4ff;
+        }
+
+        .translate-btn {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-left: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .translate-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* Login Modal */
+        .modal-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .modal {
+            background: #ffffff;
+            width: 95%;
+            max-width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .modal-header {
+            padding: 1rem 1.25rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-body {
+            padding: 1.25rem;
+            background: #f9fafb;
+        }
+
+        .modal-close {
+            border: none;
+            background: transparent;
+            color: #fff;
+            font-size: 1.25rem;
+            cursor: pointer;
+        }
+
+        .login-form .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .login-form input[type="email"],
+        .login-form input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #fff;
+        }
+
+        .login-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 0.5rem;
+        }
+
+        .link-button {
+            background: none;
+            border: none;
+            color: #667eea;
+            cursor: pointer;
+            padding: 0;
+        }
+
+        .login-btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="language-selector">
+        <select id="languageSelect" onchange="translatePage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी (Hindi)</option>
+            <option value="bn">বাংলা (Bengali)</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="mr">मराठी (Marathi)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+            <option value="ur">اردو (Urdu)</option>
+            <option value="gu">ગુજરાતી (Gujarati)</option>
+            <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            <option value="or">ଓଡ଼ିଆ (Odia)</option>
+            <option value="pa">ਪੰਜਾਬੀ (Punjabi)</option>
+            <option value="as">অসমীয়া (Assamese)</option>
+            <option value="ml">മലയാളം (Malayalam)</option>
+            <option value="ne">नेपाली (Nepali)</option>
+            <option value="sa">संस्कृत (Sanskrit)</option>
+            <option value="ks">کٲشُر (Kashmiri)</option>
+            <option value="sd">سنڌي (Sindhi)</option>
+            <option value="kok">कोंकणी (Konkani)</option>
+            <option value="mni">মৈতৈলোন (Manipuri)</option>
+            <option value="lus">Mizo</option>
+            <option value="brx">बड़ो (Bodo)</option>
+            <option value="sat">ᱥᱟᱱᱛᱟᱲᱤ (Santali)</option>
+            <option value="gom">गोंयची कोंकणी (Goan Konkani)</option>
+            <option value="mni-Mtei">ꯃꯤꯇꯩꯂꯣꯟ (Meitei)</option>
+        </select>
+        <button class="translate-btn" onclick="translatePage()">Translate</button>
+            </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">Futurnship.in</div>
+            <ul class="nav-links">
+                <li><a href="#home" data-translate="nav.home">Home</a></li>
+                <li><a href="#about" data-translate="nav.about">About</a></li>
+                <li><a href="#features" data-translate="nav.features">Features</a></li>
+                <li><a href="#scholarships" data-translate="nav.scholarships">Scholarships</a></li>
+                <li><a href="#contact" data-translate="nav.contact">Contact</a></li>
+                <li><a href="#" id="loginToggle">Login</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+        </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero" style="display: block;">
+        <div class="container">
+            <h1 data-translate="hero.title">Welcome to Futurnship.in</h1>
+            <p class="hero-subtitle" data-translate="hero.subtitle">Your gateway to internships, scholarships, and future opportunities</p>
+            
+            <div class="hero-content">
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <div class="hero-icon">🎓</div>
+                        <h3 data-translate="hero.feature1.title">Find Perfect Internships</h3>
+                        <p data-translate="hero.feature1.desc">Discover internships tailored to your skills, interests, and career goals</p>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="hero-icon">💰</div>
+                        <h3 data-translate="hero.feature2.title">Access Scholarships</h3>
+                        <p data-translate="hero.feature2.desc">Get matched with scholarships based on your background and achievements</p>
+                    </div>
+                    <div class="hero-feature">
+                        <div class="hero-icon">🚀</div>
+                        <h3 data-translate="hero.feature3.title">Build Your Future</h3>
+                        <p data-translate="hero.feature3.desc">Connect with opportunities that will shape your professional journey</p>
+                    </div>
+                </div>
+                
+                
+                <div class="hero-cta">
+                    <a href="#registration" id="getStartedBtn" class="cta-button" data-translate="hero.cta">Get Started Now</a>
+                    <p class="cta-note" data-translate="hero.cta.note">Join thousands of students who found their perfect opportunity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+            <div class="modal-header">
+                <h3 id="loginTitle">Login to Futurnship.in</h3>
+                <button class="modal-close" id="closeLogin" aria-label="Close">×</button>
+            </div>
+            <div class="modal-body">
+                <form id="loginForm" class="login-form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" placeholder="••••••••" minlength="6" required>
+                    </div>
+                    <div class="login-actions">
+                        <button type="button" class="link-button" id="forgotPassword">Forgot password?</button>
+                        <button type="submit" class="login-btn">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="registration" class="registration-section">
+        <div class="container">
+            <h2 data-translate="form.title">Tell Us About Yourself</h2>
+            <p data-translate="form.subtitle">Help us find the perfect internships for you</p>
+            <form id="userRegistrationForm" class="registration-form">
+                <div class="form-group">
+                    <label for="name" data-translate="form.name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" data-translate="form.email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="field" data-translate="form.field">Field of Study</label>
+                    <select id="field" name="field" required>
+                        <option value="">Select your field</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="business">Business</option>
+                        <option value="design">Design</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experience" data-translate="form.experience">Experience Level</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select experience level</option>
+                        <option value="beginner">Beginner (0-1 years)</option>
+                        <option value="intermediate">Intermediate (1-3 years)</option>
+                        <option value="advanced">Advanced (3+ years)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="location" data-translate="form.location">Preferred Location</label>
+                    <select id="location" name="location" required>
+                        <option value="">Select location</option>
+                        <option value="remote">Remote</option>
+                        <option value="new-york">New York</option>
+                        <option value="san-francisco">San Francisco</option>
+                        <option value="london">London</option>
+                        <option value="berlin">Berlin</option>
+                        <option value="singapore">Singapore</option>
+                        <option value="any">Any Location</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="interests" data-translate="form.interests">Areas of Interest (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interests" value="web-development"> Web Development</label>
+                        <label><input type="checkbox" name="interests" value="mobile-development"> Mobile Development</label>
+                        <label><input type="checkbox" name="interests" value="ai-ml"> AI/ML</label>
+                        <label><input type="checkbox" name="interests" value="data-analysis"> Data Analysis</label>
+                        <label><input type="checkbox" name="interests" value="ui-ux"> UI/UX Design</label>
+                        <label><input type="checkbox" name="interests" value="cybersecurity"> Cybersecurity</label>
+                        <label><input type="checkbox" name="interests" value="blockchain"> Blockchain</label>
+                        <label><input type="checkbox" name="interests" value="devops"> DevOps</label>
+                </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="duration" data-translate="form.duration">Preferred Duration</label>
+                    <select id="duration" name="duration" required>
+                        <option value="">Select duration</option>
+                        <option value="1-3-months">1-3 months</option>
+                        <option value="3-6-months">3-6 months</option>
+                        <option value="6-12-months">6-12 months</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label data-translate="form.interest_type">What are you looking for?</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="interest_type" value="internships" checked> Internships</label>
+                        <label><input type="checkbox" name="interest_type" value="scholarships" checked> Scholarships</label>
+                    </div>
+                </div>
+
+                <div class="caste-section">
+                    <h4 data-translate="form.caste">Caste Information (For Scholarship Eligibility)</h4>
+                    <div class="caste-options">
+                        <label class="caste-option">
+                            <input type="radio" name="caste" value="general" onchange="selectCaste(this)">
+                            <span>General</span>
+                        </label>
+                        <label class="caste-option">
+                            <input type="radio" name="caste" value="obc" onchange="selectCaste(this)">
+                            <span>OBC (Other Backward Classes)</span>
+                        </label>
+                        <label class="caste-option">
+                            <input type="radio" name="caste" value="sc" onchange="selectCaste(this)">
+                            <span>SC (Scheduled Caste)</span>
+                        </label>
+                        <label class="caste-option">
+                            <input type="radio" name="caste" value="st" onchange="selectCaste(this)">
+                            <span>ST (Scheduled Tribe)</span>
+                        </label>
+                        <label class="caste-option">
+                            <input type="radio" name="caste" value="ews" onchange="selectCaste(this)">
+                            <span>EWS (Economically Weaker Section)</span>
+                        </label>
+                        <label class="caste-option">
+                            <input type="radio" name="caste" value="prefer-not-to-say" onchange="selectCaste(this)">
+                            <span>Prefer not to say</span>
+                        </label>
+                </div>
+                </div>
+                
+                <button type="submit" class="submit-btn" data-translate="form.submit">Find My Opportunities</button>
+            </form>
+        </div>
+        </section>
+
+    <section id="scholarships" class="scholarship-section" style="display: none;">
+        <div class="container">
+            <h2>Available Scholarships</h2>
+            <p>Discover scholarships tailored to your background and achievements</p>
+            <div class="scholarship-grid">
+                <div class="scholarship-card">
+                    <h3>Merit Scholarship</h3>
+                    <div class="amount">₹50,000 - ₹2,00,000</div>
+                    <div class="eligibility">
+                        <h4>Eligibility:</h4>
+                        <ul>
+                            <li>Academic excellence (90%+ in 12th grade)</li>
+                            <li>All fields of study</li>
+                            <li>Annual family income < ₹8,00,000</li>
+                        </ul>
+            </div>
+                </div>
+                
+                <div class="scholarship-card">
+                    <h3>SC/ST Scholarship</h3>
+                    <div class="amount">₹25,000 - ₹1,50,000</div>
+                    <div class="eligibility">
+                        <h4>Eligibility:</h4>
+                        <ul>
+                            <li>SC/ST category students</li>
+                            <li>75%+ in 12th grade</li>
+                            <li>All fields of study</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="scholarship-card">
+                    <h3>OBC Scholarship</h3>
+                    <div class="amount">₹20,000 - ₹1,00,000</div>
+                    <div class="eligibility">
+                        <h4>Eligibility:</h4>
+                        <ul>
+                            <li>OBC category students</li>
+                            <li>80%+ in 12th grade</li>
+                            <li>Annual family income < ₹6,00,000</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="scholarship-card">
+                    <h3>EWS Scholarship</h3>
+                    <div class="amount">₹15,000 - ₹75,000</div>
+                    <div class="eligibility">
+                        <h4>Eligibility:</h4>
+                        <ul>
+                            <li>EWS category students</li>
+                            <li>85%+ in 12th grade</li>
+                            <li>Annual family income < ₹4,00,000</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="scholarship-card">
+                    <h3>Girl Child Scholarship</h3>
+                    <div class="amount">₹30,000 - ₹1,25,000</div>
+                    <div class="eligibility">
+                        <h4>Eligibility:</h4>
+                        <ul>
+                            <li>Female students only</li>
+                            <li>80%+ in 12th grade</li>
+                            <li>All categories eligible</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="scholarship-card">
+                    <h3>Technology Innovation Scholarship</h3>
+                    <div class="amount">₹40,000 - ₹2,50,000</div>
+                    <div class="eligibility">
+                        <h4>Eligibility:</h4>
+                        <ul>
+                            <li>Computer Science/Engineering</li>
+                            <li>Innovation project required</li>
+                            <li>All categories eligible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <section id="results" class="results-section" style="display: none;">
+        <div class="container">
+            <h2>Your Personalized Internship & Scholarship Matches</h2>
+            <p id="results-description"></p>
+            <div id="internship-results" class="internship-grid"></div>
+            <div id="scholarship-results" class="scholarship-grid" style="margin-top: 3rem;"></div>
+            </div>
+        </section>
+
+
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Participants</p>
+                </div>
+                <div class="stat-item">
+                    <h3>48</h3>
+                    <p>Hours</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                    <h3>$10K</h3>
+                    <p>Prize Pool</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h3>Ready to Join Futurnship.in?</h3>
+            <p>Find your perfect internship and scholarship opportunities today!</p>
+            <p>&copy; 2025 Futurnship.in. All rights reserved.</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">Powered by: Phoenix Legends</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    // Hide all sections first
+                    document.getElementById('home').style.display = 'block';
+                    document.getElementById('registration').style.display = 'none';
+                    document.getElementById('results').style.display = 'none';
+                    document.getElementById('scholarships').style.display = 'none';
+                    
+                    // Show the target section
+                    if (this.getAttribute('href') === '#home') {
+                        target.style.display = 'block';
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    } else if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Reveal elements on scroll (adds .visible to trigger CSS animations)
+        const observerOptions = { threshold: 0.12, rootMargin: '0px 0px -50px 0px' };
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            revealObserver.observe(el);
+        });
+
+        // Button spark follow cursor
+        document.querySelectorAll('.cta-button').forEach(btn => {
+            btn.addEventListener('pointermove', (e) => {
+                const rect = btn.getBoundingClientRect();
+                btn.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                btn.style.setProperty('--y', `${e.clientY - rect.top}px`);
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        });
+
+        // Add some interactive effects
+        document.querySelectorAll('.feature-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Dynamic counter animation for stats
+        function animateCounter(element, target, duration = 2000) {
+            let start = 0;
+            const increment = target / (duration / 16);
+            
+            function updateCounter() {
+                start += increment;
+                if (start < target) {
+                    element.textContent = Math.floor(start);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target;
+                }
+            }
+            
+            updateCounter();
+        }
+
+        // Animate stats when they come into view
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('h3');
+                    statNumbers.forEach(stat => {
+                        const text = stat.textContent;
+                        const number = parseInt(text.replace(/\D/g, ''));
+                        if (number) {
+                            stat.textContent = '0';
+                            setTimeout(() => animateCounter(stat, number), 200);
+                        }
+                    });
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Step flow: Welcome -> Registration -> Results
+        const getStartedBtn = document.getElementById('getStartedBtn');
+        const heroSection = document.getElementById('home');
+        const registrationSection = document.getElementById('registration');
+        const resultsSectionEl = document.getElementById('results');
+
+        if (getStartedBtn) {
+            getStartedBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                heroSection.style.display = 'none';
+                registrationSection.style.display = 'block';
+                registrationSection.scrollIntoView({ behavior: 'smooth' });
+            });
+        }
+
+        // Login Modal Logic
+        const loginToggle = document.getElementById('loginToggle');
+        const loginModal = document.getElementById('loginModal');
+        const closeLogin = document.getElementById('closeLogin');
+        const loginForm = document.getElementById('loginForm');
+
+        function openLogin() {
+            loginModal.style.display = 'flex';
+            setTimeout(() => document.getElementById('loginEmail').focus(), 0);
+        }
+
+        function closeLoginModal() {
+            loginModal.style.display = 'none';
+        }
+
+        loginToggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            const isLoggedIn = Boolean(localStorage.getItem('fs_user'));
+            if (isLoggedIn) {
+                // Logout flow
+                localStorage.removeItem('fs_user');
+                loginToggle.textContent = 'Login';
+                alert('You have been logged out.');
+            } else {
+                openLogin();
+            }
+        });
+
+        closeLogin.addEventListener('click', closeLoginModal);
+        loginModal.addEventListener('click', (e) => {
+            if (e.target === loginModal) closeLoginModal();
+        });
+
+        loginForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = document.getElementById('loginEmail').value.trim();
+            const password = document.getElementById('loginPassword').value;
+
+            if (!email || !password || password.length < 6) {
+                alert('Please enter a valid email and a password with at least 6 characters.');
+                return;
+            }
+
+            // Fake auth: store minimal session in localStorage
+            localStorage.setItem('fs_user', JSON.stringify({ email }));
+            loginToggle.textContent = 'Logout';
+            closeLoginModal();
+            alert(`Welcome back, ${email}!`);
+        });
+
+        // Initialize Login state on load
+        (function initLoginState() {
+            const isLoggedIn = Boolean(localStorage.getItem('fs_user'));
+            loginToggle.textContent = isLoggedIn ? 'Logout' : 'Login';
+        })();
+
+        // Internship database
+        const internships = [
+            {
+                id: 1,
+                title: "Software Development Intern",
+                company: "TechCorp",
+                location: "San Francisco",
+                field: "computer-science",
+                experience: "beginner",
+                interests: ["web-development", "mobile-development"],
+                duration: "3-6-months",
+                description: "Join our dynamic team to develop cutting-edge web and mobile applications using modern technologies.",
+                requirements: ["Basic knowledge of JavaScript", "Familiarity with React or Vue.js", "Understanding of REST APIs"],
+                matchScore: 0
+            },
+            {
+                id: 2,
+                title: "Data Science Intern",
+                company: "DataFlow Inc",
+                location: "Remote",
+                field: "data-science",
+                experience: "intermediate",
+                interests: ["data-analysis", "ai-ml"],
+                duration: "6-12-months",
+                description: "Work on machine learning models and data analysis projects that impact millions of users.",
+                requirements: ["Python programming", "Experience with pandas/numpy", "Basic understanding of ML algorithms"],
+                matchScore: 0
+            },
+            {
+                id: 3,
+                title: "UI/UX Design Intern",
+                company: "DesignStudio",
+                location: "New York",
+                field: "design",
+                experience: "beginner",
+                interests: ["ui-ux"],
+                duration: "3-6-months",
+                description: "Create beautiful and intuitive user interfaces for our next-generation products.",
+                requirements: ["Figma or Sketch experience", "Portfolio of design work", "Understanding of user research"],
+                matchScore: 0
+            },
+            {
+                id: 4,
+                title: "Cybersecurity Intern",
+                company: "SecureTech",
+                location: "London",
+                field: "cybersecurity",
+                experience: "intermediate",
+                interests: ["cybersecurity"],
+                duration: "6-12-months",
+                description: "Help protect our systems and data from cyber threats while learning cutting-edge security practices.",
+                requirements: ["Understanding of network security", "Knowledge of penetration testing", "Familiarity with security tools"],
+                matchScore: 0
+            },
+            {
+                id: 5,
+                title: "Blockchain Developer Intern",
+                company: "CryptoVault",
+                location: "Berlin",
+                field: "computer-science",
+                experience: "advanced",
+                interests: ["blockchain"],
+                duration: "6-12-months",
+                description: "Develop smart contracts and blockchain solutions for the future of finance.",
+                requirements: ["Solidity programming", "Understanding of blockchain concepts", "Experience with Web3"],
+                matchScore: 0
+            },
+            {
+                id: 6,
+                title: "DevOps Intern",
+                company: "CloudScale",
+                location: "Singapore",
+                field: "engineering",
+                experience: "intermediate",
+                interests: ["devops"],
+                duration: "3-6-months",
+                description: "Learn cloud infrastructure and deployment automation in a fast-paced environment.",
+                requirements: ["Linux administration", "Docker/Kubernetes knowledge", "AWS or Azure experience"],
+                matchScore: 0
+            },
+            {
+                id: 7,
+                title: "AI/ML Research Intern",
+                company: "AI Innovations",
+                location: "Remote",
+                field: "computer-science",
+                experience: "advanced",
+                interests: ["ai-ml", "data-analysis"],
+                duration: "6-12-months",
+                description: "Research and develop next-generation AI models for real-world applications.",
+                requirements: ["Strong Python skills", "TensorFlow/PyTorch experience", "Research background preferred"],
+                matchScore: 0
+            },
+            {
+                id: 8,
+                title: "Mobile App Development Intern",
+                company: "AppCraft",
+                location: "New York",
+                field: "computer-science",
+                experience: "beginner",
+                interests: ["mobile-development"],
+                duration: "3-6-months",
+                description: "Build native and cross-platform mobile applications for iOS and Android.",
+                requirements: ["React Native or Flutter", "Mobile development basics", "App Store/Play Store knowledge"],
+                matchScore: 0
+            }
+        ];
+
+        // Form submission handler
+        document.getElementById('userRegistrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const userData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                field: formData.get('field'),
+                experience: formData.get('experience'),
+                location: formData.get('location'),
+                interests: formData.getAll('interests'),
+                duration: formData.get('duration')
+            };
+
+            // Calculate match scores and filter internships
+            const matchedInternships = filterInternships(userData);
+            
+            // Display results
+            displayResults(userData, matchedInternships);
+            
+            // Scroll to results
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        function filterInternships(userData) {
+            return internships.map(internship => {
+                let score = 0;
+                
+                // Field match (40 points)
+                if (internship.field === userData.field) {
+                    score += 40;
+                }
+                
+                // Experience match (25 points)
+                if (internship.experience === userData.experience) {
+                    score += 25;
+                } else if (userData.experience === 'beginner' && internship.experience === 'intermediate') {
+                    score += 15; // Beginner can apply to intermediate
+                } else if (userData.experience === 'intermediate' && internship.experience === 'advanced') {
+                    score += 15; // Intermediate can apply to advanced
+                }
+                
+                // Location match (20 points)
+                if (internship.location === userData.location || 
+                    userData.location === 'any' || 
+                    internship.location === 'remote') {
+                    score += 20;
+                }
+                
+                // Interest match (15 points per matching interest)
+                const matchingInterests = internship.interests.filter(interest => 
+                    userData.interests.includes(interest)
+                );
+                score += matchingInterests.length * 15;
+                
+                // Duration match (10 points)
+                if (internship.duration === userData.duration || userData.duration === 'flexible') {
+                    score += 10;
+                }
+                
+                internship.matchScore = Math.min(score, 100); // Cap at 100
+                return internship;
+            })
+            .filter(internship => internship.matchScore >= 30) // Only show internships with 30%+ match
+            .sort((a, b) => b.matchScore - a.matchScore); // Sort by match score
+        }
+
+        function displayResults(userData, matchedInternships) {
+            const resultsSection = document.getElementById('results');
+            const resultsDescription = document.getElementById('results-description');
+            const resultsContainer = document.getElementById('internship-results');
+            
+            // Show results section
+            resultsSection.style.display = 'block';
+            
+            // Update description
+            resultsDescription.textContent = `Hi ${userData.name}! We found ${matchedInternships.length} internship${matchedInternships.length !== 1 ? 's' : ''} that match your profile.`;
+            
+            // Clear previous results
+            resultsContainer.innerHTML = '';
+            
+            if (matchedInternships.length === 0) {
+                resultsContainer.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: #666;">
+                        <h3>No matches found</h3>
+                        <p>Try adjusting your preferences or check back later for new opportunities!</p>
+                    </div>
+                `;
+                return;
+            }
+            
+            // Display matched internships
+            matchedInternships.forEach(internship => {
+                const card = document.createElement('div');
+                card.className = 'internship-card';
+                card.innerHTML = `
+                    <div class="match-score">${internship.matchScore}% Match</div>
+                    <h3>${internship.title}</h3>
+                    <div class="company">${internship.company}</div>
+                    <div class="location">📍 ${internship.location}</div>
+                    <div class="description">${internship.description}</div>
+                    <div class="requirements">
+                        <h4>Requirements:</h4>
+                        <ul>
+                            ${internship.requirements.map(req => `<li>${req}</li>`).join('')}
+                        </ul>
+                    </div>
+                    <button class="apply-btn" onclick="applyToInternship(${internship.id})">Apply Now</button>
+                `;
+                resultsContainer.appendChild(card);
+            });
+        }
+
+        function applyToInternship(internshipId) {
+            const internship = internships.find(i => i.id === internshipId);
+            if (internship) {
+                alert(`Application submitted for ${internship.title} at ${internship.company}! We'll contact you soon.`);
+            }
+        }
+
+        // Language Translation System
+        const translations = {
+            en: {
+                "nav.home": "Home",
+                "nav.about": "About", 
+                "nav.features": "Features",
+                "nav.scholarships": "Scholarships",
+                "nav.contact": "Contact",
+                "hero.title": "Welcome to Futurnship.in",
+                "hero.subtitle": "Your gateway to internships, scholarships, and future opportunities",
+                "hero.cta": "Get Started Now",
+                "hero.feature1.title": "Find Perfect Internships",
+                "hero.feature1.desc": "Discover internships tailored to your skills, interests, and career goals",
+                "hero.feature2.title": "Access Scholarships",
+                "hero.feature2.desc": "Get matched with scholarships based on your background and achievements",
+                "hero.feature3.title": "Build Your Future",
+                "hero.feature3.desc": "Connect with opportunities that will shape your professional journey",
+                "hero.cta.note": "Join thousands of students who found their perfect opportunity",
+                "form.title": "Tell Us About Yourself",
+                "form.subtitle": "Help us find the perfect internships for you",
+                "form.name": "Full Name",
+                "form.email": "Email",
+                "form.field": "Field of Study",
+                "form.experience": "Experience Level",
+                "form.location": "Preferred Location",
+                "form.interests": "Areas of Interest (Select all that apply)",
+                "form.duration": "Preferred Duration",
+                "form.interest_type": "What are you looking for?",
+                "form.caste": "Caste Information (For Scholarship Eligibility)",
+                "form.submit": "Find My Opportunities",
+                "scholarships.title": "Available Scholarships",
+                "scholarships.subtitle": "Discover scholarships tailored to your background and achievements"
+            },
+            hi: {
+                "nav.home": "होम",
+                "nav.about": "के बारे में",
+                "nav.features": "विशेषताएं",
+                "nav.scholarships": "छात्रवृत्ति",
+                "nav.contact": "संपर्क",
+                "hero.title": "Futurnship.in में आपका स्वागत है",
+                "hero.subtitle": "इंटर्नशिप, छात्रवृत्ति और भविष्य के अवसरों का आपका द्वार",
+                "hero.cta": "अभी शुरू करें",
+                "hero.feature1.title": "सही इंटर्नशिप खोजें",
+                "hero.feature1.desc": "अपनी क्षमताओं, रुचियों और करियर लक्ष्यों के अनुरूप इंटर्नशिप खोजें",
+                "hero.feature2.title": "छात्रवृत्ति तक पहुंचें",
+                "hero.feature2.desc": "अपनी पृष्ठभूमि और उपलब्धियों के आधार पर छात्रवृत्ति से मेल खाएं",
+                "hero.feature3.title": "अपना भविष्य बनाएं",
+                "hero.feature3.desc": "अवसरों से जुड़ें जो आपके पेशेवर सफर को आकार देंगे",
+                "hero.cta.note": "हजारों छात्रों के साथ जुड़ें जिन्होंने अपना सही अवसर पाया",
+                "form.title": "अपने बारे में बताएं",
+                "form.subtitle": "हमें आपके लिए सही इंटर्नशिप खोजने में मदद करें",
+                "form.name": "पूरा नाम",
+                "form.email": "ईमेल",
+                "form.field": "अध्ययन का क्षेत्र",
+                "form.experience": "अनुभव स्तर",
+                "form.location": "पसंदीदा स्थान",
+                "form.interests": "रुचि के क्षेत्र (सभी लागू विकल्प चुनें)",
+                "form.duration": "पसंदीदा अवधि",
+                "form.interest_type": "आप क्या खोज रहे हैं?",
+                "form.caste": "जाति जानकारी (छात्रवृत्ति पात्रता के लिए)",
+                "form.submit": "मेरे अवसर खोजें",
+                "scholarships.title": "उपलब्ध छात्रवृत्ति",
+                "scholarships.subtitle": "अपनी पृष्ठभूमि और उपलब्धियों के अनुरूप छात्रवृत्ति खोजें"
+            },
+            te: {
+                "nav.home": "హోమ్",
+                "nav.about": "గురించి",
+                "nav.features": "విశేషాలు",
+                "nav.scholarships": "విద్యార్థి వేతనాలు",
+                "nav.contact": "సంప్రదింపు",
+                "hero.title": "Futurnship.inకు స్వాగతం",
+                "hero.subtitle": "ఇంటర్న్షిప్లు, విద్యార్థి వేతనాలు మరియు భవిష్యత్ అవకాశాలకు మీ ద్వారం",
+                "hero.cta": "ఇప్పుడే ప్రారంభించండి",
+                "hero.feature1.title": "సరైన ఇంటర్న్షిప్లను కనుగొనండి",
+                "hero.feature1.desc": "మీ నైపుణ్యాలు, ఆసక్తులు మరియు కెరీర్ లక్ష్యాలకు అనుగుణంగా ఇంటర్న్షిప్లను కనుగొనండి",
+                "hero.feature2.title": "విద్యార్థి వేతనాలను యాక్సెస్ చేయండి",
+                "hero.feature2.desc": "మీ నేపథ్యం మరియు సాధనల ఆధారంగా విద్యార్థి వేతనాలతో మ్యాచ్ అవండి",
+                "hero.feature3.title": "మీ భవిష్యత్తును నిర్మించండి",
+                "hero.feature3.desc": "మీ వృత్తిపరమైన ప్రయాణాన్ని ఆకృతి చేసే అవకాశాలతో కనెక్ట్ అవండి",
+                "hero.cta.note": "తమకు సరైన అవకాశాన్ని కనుగొన్న వేలాది విద్యార్థులతో చేరండి",
+                "form.title": "మీ గురించి మాకు చెప్పండి",
+                "form.subtitle": "మీకు సరైన ఇంటర్న్షిప్లను కనుగొనడంలో మాకు సహాయపడండి",
+                "form.name": "పూర్తి పేరు",
+                "form.email": "ఇమెయిల్",
+                "form.field": "అధ్యయన రంగం",
+                "form.experience": "అనుభవ స్థాయి",
+                "form.location": "ఇష్టమైన స్థానం",
+                "form.interests": "ఆసక్తి రంగాలు (అన్ని వర్తించే ఎంపికలను ఎంచుకోండి)",
+                "form.duration": "ఇష్టమైన వ్యవధి",
+                "form.interest_type": "మీరు ఏమి వెతుకుతున్నారు?",
+                "form.caste": "కుల సమాచారం (విద్యార్థి వేతన అర్హత కోసం)",
+                "form.submit": "నా అవకాశాలను కనుగొనండి",
+                "scholarships.title": "అందుబాటులో ఉన్న విద్యార్థి వేతనాలు",
+                "scholarships.subtitle": "మీ నేపథ్యం మరియు సాధనలకు అనుగుణంగా విద్యార్థి వేతనాలను కనుగొనండి"
+            }
+        };
+
+        function translatePage() {
+            const selectedLanguage = document.getElementById('languageSelect').value;
+            const elements = document.querySelectorAll('[data-translate]');
+            
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[selectedLanguage] && translations[selectedLanguage][key]) {
+                    element.textContent = translations[selectedLanguage][key];
+                }
+            });
+        }
+
+        // Caste selection handler
+        function selectCaste(radio) {
+            // Remove selected class from all options
+            document.querySelectorAll('.caste-option').forEach(option => {
+                option.classList.remove('selected');
+            });
+            // Add selected class to clicked option
+            radio.closest('.caste-option').classList.add('selected');
+        }
+
+        // Scholarship database
+        const scholarships = [
+            {
+                id: 1,
+                title: "Merit Scholarship",
+                amount: "₹50,000 - ₹2,00,000",
+                category: "general",
+                eligibility: ["Academic excellence (90%+ in 12th grade)", "All fields of study", "Annual family income < ₹8,00,000"],
+                matchScore: 0
+            },
+            {
+                id: 2,
+                title: "SC/ST Scholarship", 
+                amount: "₹25,000 - ₹1,50,000",
+                category: "sc_st",
+                eligibility: ["SC/ST category students", "75%+ in 12th grade", "All fields of study"],
+                matchScore: 0
+            },
+            {
+                id: 3,
+                title: "OBC Scholarship",
+                amount: "₹20,000 - ₹1,00,000", 
+                category: "obc",
+                eligibility: ["OBC category students", "80%+ in 12th grade", "Annual family income < ₹6,00,000"],
+                matchScore: 0
+            },
+            {
+                id: 4,
+                title: "EWS Scholarship",
+                amount: "₹15,000 - ₹75,000",
+                category: "ews", 
+                eligibility: ["EWS category students", "85%+ in 12th grade", "Annual family income < ₹4,00,000"],
+                matchScore: 0
+            },
+            {
+                id: 5,
+                title: "Girl Child Scholarship",
+                amount: "₹30,000 - ₹1,25,000",
+                category: "girl_child",
+                eligibility: ["Female students only", "80%+ in 12th grade", "All categories eligible"],
+                matchScore: 0
+            },
+            {
+                id: 6,
+                title: "Technology Innovation Scholarship",
+                amount: "₹40,000 - ₹2,50,000",
+                category: "tech_innovation",
+                eligibility: ["Computer Science/Engineering", "Innovation project required", "All categories eligible"],
+                matchScore: 0
+            }
+        ];
+
+        // Updated form submission handler
+        document.getElementById('userRegistrationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const userData = {
+                name: formData.get('name'),
+                email: formData.get('email'),
+                field: formData.get('field'),
+                experience: formData.get('experience'),
+                location: formData.get('location'),
+                interests: formData.getAll('interests'),
+                duration: formData.get('duration'),
+                caste: formData.get('caste'),
+                interestType: formData.getAll('interest_type')
+            };
+
+            // Validate that at least one interest type is selected
+            if (userData.interestType.length === 0) {
+                alert('Please select at least one option: Internships or Scholarships');
+                return;
+            }
+
+            // Debug: Log user data to console
+            console.log('User Data:', userData);
+            console.log('Interest Type:', userData.interestType);
+
+            let matchedInternships = [];
+            let matchedScholarships = [];
+
+            // Calculate match scores based on user's choice
+            if (userData.interestType.includes('internships')) {
+                matchedInternships = filterInternships(userData);
+            }
+            
+            if (userData.interestType.includes('scholarships')) {
+                matchedScholarships = filterScholarships(userData);
+            }
+            
+            // Switch to results step
+            registrationSection.style.display = 'none';
+            displayResults(userData, matchedInternships, matchedScholarships);
+            heroSection.style.display = 'none';
+            resultsSectionEl.style.display = 'block';
+            resultsSectionEl.scrollIntoView({ behavior: 'smooth' });
+        });
+
+        function filterScholarships(userData) {
+            return scholarships.map(scholarship => {
+                let score = 0;
+                
+                // Caste match (50 points)
+                if (userData.caste === 'sc' && scholarship.category === 'sc_st') {
+                    score += 50;
+                } else if (userData.caste === 'st' && scholarship.category === 'sc_st') {
+                    score += 50;
+                } else if (userData.caste === 'obc' && scholarship.category === 'obc') {
+                    score += 50;
+                } else if (userData.caste === 'ews' && scholarship.category === 'ews') {
+                    score += 50;
+                } else if (scholarship.category === 'general' || scholarship.category === 'tech_innovation') {
+                    score += 30; // General scholarships available to all
+                }
+                
+                // Field match for tech innovation (20 points)
+                if (scholarship.category === 'tech_innovation' && 
+                    (userData.field === 'computer-science' || userData.field === 'engineering')) {
+                    score += 20;
+                }
+                
+                // Girl child scholarship (30 points)
+                if (scholarship.category === 'girl_child') {
+                    score += 30; // This would need gender information in real implementation
+                }
+                
+                scholarship.matchScore = Math.min(score, 100);
+                return scholarship;
+            })
+            .filter(scholarship => scholarship.matchScore >= 30)
+            .sort((a, b) => b.matchScore - a.matchScore);
+        }
+
+        function displayResults(userData, matchedInternships, matchedScholarships) {
+            const resultsSection = document.getElementById('results');
+            const resultsDescription = document.getElementById('results-description');
+            const internshipResults = document.getElementById('internship-results');
+            const scholarshipResults = document.getElementById('scholarship-results');
+            
+            // Show results section
+            resultsSection.style.display = 'block';
+            
+            // Build description based on what user selected
+            let description = `Hi ${userData.name}! `;
+            const wantsInternships = userData.interestType.includes('internships');
+            const wantsScholarships = userData.interestType.includes('scholarships');
+            
+            // Debug: Log what user wants
+            console.log('Wants Internships:', wantsInternships);
+            console.log('Wants Scholarships:', wantsScholarships);
+            console.log('Matched Internships:', matchedInternships.length);
+            console.log('Matched Scholarships:', matchedScholarships.length);
+            
+            if (wantsInternships && wantsScholarships) {
+                description += `We found ${matchedInternships.length} internship${matchedInternships.length !== 1 ? 's' : ''} and ${matchedScholarships.length} scholarship${matchedScholarships.length !== 1 ? 's' : ''} that match your profile.`;
+            } else if (wantsInternships) {
+                description += `We found ${matchedInternships.length} internship${matchedInternships.length !== 1 ? 's' : ''} that match your profile.`;
+            } else if (wantsScholarships) {
+                description += `We found ${matchedScholarships.length} scholarship${matchedScholarships.length !== 1 ? 's' : ''} that match your profile.`;
+            }
+            
+            resultsDescription.textContent = description;
+            
+            // Clear previous results
+            internshipResults.innerHTML = '';
+            scholarshipResults.innerHTML = '';
+            
+            // Display internships only if user wants them
+            if (wantsInternships) {
+                // Make sure internship section is visible
+                internshipResults.style.display = 'block';
+                
+                if (matchedInternships.length === 0) {
+                    internshipResults.innerHTML = `
+                        <div style="text-align: center; padding: 2rem; color: #666;">
+                            <h3>No internship matches found</h3>
+                            <p>Try adjusting your preferences or check back later for new opportunities!</p>
+                        </div>
+                    `;
+                } else {
+                    matchedInternships.forEach(internship => {
+                        const card = document.createElement('div');
+                        card.className = 'internship-card';
+                        card.innerHTML = `
+                            <div class="match-score">${internship.matchScore}% Match</div>
+                            <h3>${internship.title}</h3>
+                            <div class="company">${internship.company}</div>
+                            <div class="location">📍 ${internship.location}</div>
+                            <div class="description">${internship.description}</div>
+                            <div class="requirements">
+                                <h4>Requirements:</h4>
+                                <ul>
+                                    ${internship.requirements.map(req => `<li>${req}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <button class="apply-btn" onclick="applyToInternship(${internship.id})">Apply Now</button>
+                        `;
+                        internshipResults.appendChild(card);
+                    });
+                }
+            } else {
+                // Hide internship section if not selected
+                internshipResults.style.display = 'none';
+            }
+            
+            // Display scholarships only if user wants them
+            if (wantsScholarships) {
+                // Make sure scholarship section is visible
+                scholarshipResults.style.display = 'block';
+                
+                if (matchedScholarships.length === 0) {
+                    scholarshipResults.innerHTML = `
+                        <div style="text-align: center; padding: 2rem; color: #666;">
+                            <h3>No scholarship matches found</h3>
+                            <p>Check back later for new scholarship opportunities!</p>
+                        </div>
+                    `;
+                } else {
+                    matchedScholarships.forEach(scholarship => {
+                        const card = document.createElement('div');
+                        card.className = 'scholarship-card';
+                        card.innerHTML = `
+                            <div class="match-score">${scholarship.matchScore}% Match</div>
+                            <h3>${scholarship.title}</h3>
+                            <div class="amount">${scholarship.amount}</div>
+                            <div class="eligibility">
+                                <h4>Eligibility:</h4>
+                                <ul>
+                                    ${scholarship.eligibility.map(req => `<li>${req}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <button class="apply-btn" onclick="applyToScholarship(${scholarship.id})">Apply Now</button>
+                        `;
+                        scholarshipResults.appendChild(card);
+                    });
+                }
+            } else {
+                // Hide scholarship section if not selected
+                scholarshipResults.style.display = 'none';
+            }
+        }
+
+        function applyToScholarship(scholarshipId) {
+            const scholarship = scholarships.find(s => s.id === scholarshipId);
+            if (scholarship) {
+                alert(`Application submitted for ${scholarship.title}! We'll contact you soon.`);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AI Career Portal</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <main class="auth-card">
+        <a class="brand" href="index.html">AI Career Portal</a>
+        <h1>Create your account</h1>
+        <form id="signupForm" class="grid grid-2">
+            <div>
+                <label for="firstName">First Name</label>
+                <input id="firstName" type="text" required>
+            </div>
+            <div>
+                <label for="surname">Surname</label>
+                <input id="surname" type="text" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input id="dob" type="date" required>
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="full">
+                <label for="email">Email</label>
+                <input id="email" type="email" required autocomplete="email">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" required autocomplete="new-password" minlength="8" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).{8,}" title="At least 8 chars, with upper, lower, number, and symbol">
+                <small class="muted">Min 8 chars with upper, lower, number and symbol.</small>
+            </div>
+            <div>
+                <label for="confirmPassword">Confirm Password</label>
+                <input id="confirmPassword" type="password" required autocomplete="new-password">
+            </div>
+            <div>
+                <label for="contact">Contact Number</label>
+                <input id="contact" type="tel" required pattern="^[0-9+\-() ]{7,15}$" title="Enter a valid phone number">
+            </div>
+            <div>
+                <label for="gradYear">Year of Graduation</label>
+                <input id="gradYear" type="number" min="1980" max="2100" required>
+            </div>
+            <div>
+                <label for="degree">Degree</label>
+                <select id="degree" required>
+                    <option value="BTECH">B.Tech</option>
+                    <option value="DEGREE">Degree (BA, B.Com, B.Sc, BBA, BCA, B.Pharm)</option>
+                    <option value="MBBS">MBBS</option>
+                </select>
+            </div>
+            <div>
+                <label for="branch">Specialization / Branch</label>
+                <select id="branch" required></select>
+            </div>
+            <div class="full">
+                <label class="checkbox">
+                    <input id="accept" type="checkbox" required>
+                    <span>I accept the <a href="#">Privacy Policy</a> and <a href="#">Terms</a>.</span>
+                </label>
+            </div>
+            <button class="btn btn-primary full" type="submit">Create Account</button>
+        </form>
+        <p class="muted">Already have an account? <a href="login.html">Login</a></p>
+    </main>
+    <script src="assets/js/auth.js"></script>
+</body>
+</html>
+

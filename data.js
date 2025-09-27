@@ -1,0 +1,39 @@
+// Embedded datasets so the site works over file:// without a server
+(function(){
+  try{
+    window.AICP_DATA = window.AICP_DATA || {};
+    window.AICP_DATA.internships = [
+      {"id":"i1","title":"Software Engineering Intern","degree":"BTECH","branch":"CSE","company":"TechNova","location":"Remote","tags":["JavaScript","Web"],"description":"Work on full-stack web modules.","link":"#"},
+      {"id":"i2","title":"Embedded Systems Intern","degree":"BTECH","branch":"ECE","company":"CircuLab","location":"Hyderabad","tags":["C","ARM"],"description":"Assist in firmware development.","link":"#"},
+      {"id":"i3","title":"Power Systems Intern","degree":"BTECH","branch":"EEE","company":"GridWorks","location":"Chennai","tags":["Power","SCADA"],"description":"Support power distribution analytics.","link":"#"},
+      {"id":"i4","title":"Mechanical Design Intern","degree":"BTECH","branch":"MEC","company":"MechaForge","location":"Bengaluru","tags":["CAD","SolidWorks"],"description":"Design mechanical components.","link":"#"},
+      {"id":"i5","title":"Civil Site Intern","degree":"BTECH","branch":"CIVIL","company":"UrbanBuild","location":"Pune","tags":["Site","QA/QC"],"description":"Assist in site supervision.","link":"#"},
+      {"id":"i6","title":"VLSI Design Intern","degree":"BTECH","branch":"VLSI DESIGNING","company":"SiliconX","location":"Noida","tags":["Verilog","EDA"],"description":"Contribute to RTL design and verification.","link":"#"},
+
+      {"id":"i7","title":"Data Analyst Intern","degree":"DEGREE","branch":"B.SC","company":"InsightHub","location":"Remote","tags":["Python","SQL"],"description":"Analyze datasets and build dashboards.","link":"#"},
+      {"id":"i8","title":"Marketing Intern","degree":"DEGREE","branch":"BBA","company":"BrandLift","location":"Mumbai","tags":["SEO","Content"],"description":"Support campaign execution and reporting.","link":"#"},
+      {"id":"i9","title":"Accounting Intern","degree":"DEGREE","branch":"B.Com","company":"LedgerPro","location":"Delhi","tags":["Tally","GST"],"description":"Assist with bookkeeping and tax prep.","link":"#"},
+      {"id":"i10","title":"Pharma Lab Intern","degree":"DEGREE","branch":"B.Pharm","company":"MediCore","location":"Ahmedabad","tags":["QC","GMP"],"description":"Quality control testing and documentation.","link":"#"},
+      {"id":"i11","title":"Software Trainee","degree":"DEGREE","branch":"BCA","company":"CodeSphere","location":"Remote","tags":["Web","JS"],"description":"Learn and build web apps.","link":"#"},
+      {"id":"i12","title":"Research Assistant","degree":"DEGREE","branch":"BA","company":"PolicyLab","location":"Kolkata","tags":["Research","Writing"],"description":"Assist in literature reviews and surveys.","link":"#"},
+
+      {"id":"i13","title":"Clinical Intern","degree":"MBBS","branch":"MBBS","company":"City Hospital","location":"Hyderabad","tags":["Rounds","EMR"],"description":"Assist physicians during rounds.","link":"#"},
+      {"id":"i14","title":"Veterinary Intern","degree":"MBBS","branch":"Veterinary","company":"VetCare","location":"Chennai","tags":["Animal Care"],"description":"Assist in animal diagnosis and care.","link":"#"},
+      {"id":"i15","title":"Pharmacy Intern","degree":"MBBS","branch":"pharmacy","company":"HealthPlus","location":"Bengaluru","tags":["Dispensing","Counseling"],"description":"Support dispensing and patient counseling.","link":"#"},
+      {"id":"i16","title":"Medical Research Intern","degree":"MBBS","branch":"B.Sc","company":"BioLab","location":"Pune","tags":["Wet Lab","PCR"],"description":"Assist in lab experiments and reporting.","link":"#"}
+    ];
+
+    window.AICP_DATA.scholarships = [
+      {"id":"s1","title":"Merit Scholarship for Engineers","degree":"BTECH","branch":"CSE","gender":"","minGradYear":2024,"maxGradYear":2030,"provider":"TechTrust","link":"#"},
+      {"id":"s2","title":"Women in VLSI Grant","degree":"BTECH","branch":"VLSI DESIGNING","gender":"female","minGradYear":2023,"maxGradYear":2030,"provider":"Silicon Foundation","link":"#"},
+      {"id":"s3","title":"Civil Infrastructure Scholarship","degree":"BTECH","branch":"CIVIL","gender":"","minGradYear":2022,"maxGradYear":2030,"provider":"BuildBetter","link":"#"},
+      {"id":"s4","title":"Commerce Excellence Scholarship","degree":"DEGREE","branch":"B.Com","gender":"","minGradYear":2022,"maxGradYear":2030,"provider":"FinScholars","link":"#"},
+      {"id":"s5","title":"Women in Science Stipend","degree":"DEGREE","branch":"B.SC","gender":"female","minGradYear":2022,"maxGradYear":2030,"provider":"SciRise","link":"#"},
+      {"id":"s6","title":"BBA Leadership Grant","degree":"DEGREE","branch":"BBA","gender":"","minGradYear":2023,"maxGradYear":2030,"provider":"LeadNow","link":"#"},
+      {"id":"s7","title":"MBBS Research Scholarship","degree":"MBBS","branch":"MBBS","gender":"","minGradYear":2021,"maxGradYear":2030,"provider":"HealthTech Trust","link":"#"},
+      {"id":"s8","title":"Veterinary Rural Service Scholarship","degree":"MBBS","branch":"Veterinary","gender":"","minGradYear":2022,"maxGradYear":2030,"provider":"VetAid","link":"#"}
+    ];
+  }catch(e){ /* ignore */ }
+})();
+
+

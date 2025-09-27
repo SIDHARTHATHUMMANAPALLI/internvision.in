@@ -1,0 +1,11 @@
+[
+  {"id":"s1","title":"Merit Scholarship for Engineers","degree":"BTECH","branch":"CSE","gender":"","minGradYear":2024,"maxGradYear":2030,"provider":"TechTrust","link":"#"},
+  {"id":"s2","title":"Women in VLSI Grant","degree":"BTECH","branch":"VLSI DESIGNING","gender":"female","minGradYear":2023,"maxGradYear":2030,"provider":"Silicon Foundation","link":"#"},
+  {"id":"s3","title":"Civil Infrastructure Scholarship","degree":"BTECH","branch":"CIVIL","gender":"","minGradYear":2022,"maxGradYear":2030,"provider":"BuildBetter","link":"#"},
+  {"id":"s4","title":"Commerce Excellence Scholarship","degree":"DEGREE","branch":"B.Com","gender":"","minGradYear":2022,"maxGradYear":2030,"provider":"FinScholars","link":"#"},
+  {"id":"s5","title":"Women in Science Stipend","degree":"DEGREE","branch":"B.SC","gender":"female","minGradYear":2022,"maxGradYear":2030,"provider":"SciRise","link":"#"},
+  {"id":"s6","title":"BBA Leadership Grant","degree":"DEGREE","branch":"BBA","gender":"","minGradYear":2023,"maxGradYear":2030,"provider":"LeadNow","link":"#"},
+  {"id":"s7","title":"MBBS Research Scholarship","degree":"MBBS","branch":"MBBS","gender":"","minGradYear":2021,"maxGradYear":2030,"provider":"HealthTech Trust","link":"#"},
+  {"id":"s8","title":"Veterinary Rural Service Scholarship","degree":"MBBS","branch":"Veterinary","gender":"","minGradYear":2022,"maxGradYear":2030,"provider":"VetAid","link":"#"}
+]
+
